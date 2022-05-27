@@ -1,0 +1,22 @@
+body {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+.nav-bar {
+    border: 2px solid black;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-item {
+    display: flex;
+    justify-content: center;
+    /* border: 2px solid red; */
+    list-style: none;
+    width: 300px;
+}

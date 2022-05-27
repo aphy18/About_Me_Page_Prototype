@@ -20,13 +20,23 @@ body {
     align-items: center;
     border: 2px solid red;
     list-style: none;
-    width: 300px;
+    width: 250px;
     height: 50px;
 }
 
 
+/* width tells scale how far to go */
+
 .nav-item::after {
-    width: 100%;
     content: '';
-    border: 2px solid black;
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+    width: 100%; 
+    border: 1px solid black;
+    transform: scaleX(0)
+}
+
+.nav-item:hover::after {
+    visibility: visible;
+    transform: scaleX(1)
 }

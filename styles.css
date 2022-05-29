@@ -51,28 +51,49 @@ body {
 }
 
 .master-container {
-    border: 2px solid blue;
+    /* border: 2px solid blue; */
     width: 100%;
     height: 100%;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-end;
 }
 
 
 .location-container {
     border: 2px solid black;
-    width: 70px;
+    width: 150px;
     height: 80%;
     margin-left: 6%;
     z-index: 2;
-    background-color: red;
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    position: relative
+}
+
+.location-container::before {
+    content:'';
+    width: 5px;
+    height: 90%;
+    border: 2px solid purple;
+    z-index: -1;
+    position: absolute;
+}
+
+.location {
+    width: 50%;
+    height: 5%;
+    border: 2px solid black;
 }
 
 .text-container {
     border: 2px solid green;
-    width: 600px;
+    width: 60%;
     height: 80%;
     margin-right: 6%;
     background-color: green;
+    border: 2px solid black;
 }

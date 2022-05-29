@@ -30,8 +30,6 @@ body {
 }
 
 
-
-
 /* width tells scale how far to go */
 
 .nav-item::after {
@@ -88,13 +86,13 @@ body {
     z-index: -1;
     position: absolute;
     top: 10.5%;
-    background-color: red;
+    background-color: rgb(235, 174, 174);
     transition: height 0.3s ease-out;
 
 }
 
 .location {
-    width: 50%;
+    width: 55%;
     height: 5%;
     /* border: 2px solid black; */
     background-color: rgb(238, 218, 218);
@@ -103,6 +101,7 @@ body {
     justify-content: center;
     align-items: center;
     transition: background-color 0.4s ease-in; 
+    font-size: 20px;
 }
 
 .text-container {

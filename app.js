@@ -26,9 +26,9 @@ function decreaseLineHeight() {
 
 window.addEventListener('scroll',() => {
 
-    if (window.scrollY > 299) {
+    if (window.scrollY > 350) {
         console.log('PASSED 299')
-        locationOne.style.backgroundColor = 'red'
+        locationOne.style.backgroundColor = 'rgb(235, 174, 174)'
         locationCounter[0] = 1;
         changeLineHeight()
          
@@ -39,9 +39,9 @@ window.addEventListener('scroll',() => {
          
     }
 
-    if (window.scrollY >= webpageHeight * 0.25) {
+    if (window.scrollY > 650) {
         locationCounter[1] = 2
-        locationTwo.style.backgroundColor = 'red'
+        locationTwo.style.backgroundColor = 'rgb(235, 174, 174)'
         changeLineHeight()
     
          
@@ -51,19 +51,19 @@ window.addEventListener('scroll',() => {
         decreaseLineHeight()
     }
 
-    if (window.scrollY >= webpageHeight * 0.35) {
+    if (window.scrollY > 850) {
         locationCounter[2] = 3;
-        locationThree.style.backgroundColor = 'red'
-        // changeLineHeight()
+        locationThree.style.backgroundColor = 'rgb(235, 174, 174)'
+        changeLineHeight()
        
     } else {
         locationThree.style.backgroundColor = 'rgb(238, 218, 218)'
          locationCounter.splice(2,1)
          decreaseLineHeight()
     }
-    if (window.scrollY >= webpageHeight * 0.52) {
+    if (window.scrollY > 1000) {
         locationCounter[3] = 4;
-        locationFour.style.backgroundColor = 'red'
+        locationFour.style.backgroundColor = 'rgb(235, 174, 174)'
         // changeLineHeight()
          
       

@@ -1,43 +1,61 @@
-let locationContainer = document.querySelector('.location-container')
-
+let locationOne = document.getElementById('location-one')
+let locationTwo = document.getElementById('location-two')
+let locationThree = document.getElementById('location-three')
+let locationFour = document.getElementById('location-four')
+let locationLine = document.querySelector('.location-line')
 
 const webpageHeight = document.documentElement.scrollHeight
 
+let locationArr = document.querySelectorAll('.location')
+
+const isActive = {
+    L1: false,
+    L2: false,
+    L3: false,
+    L4: false
+}
 
 
 
-console.log('document scroll height --->', webpageHeight * 0.2)
-console.log('document scroll height --->', webpageHeight * 0.4)
-console.log('document scroll height --->', webpageHeight * 0.6)
-console.log('document scroll height --->', webpageHeight * 0.8)
-
-
-// h1One.addEventListener('click', () => {
-//     console.log(coordinatesOne)
-// })
-
-// h1Four.addEventListener('click', () => {
-//     console.log(coordinatesFour)
-// })
 
 window.addEventListener('scroll',() => {
 
 
     console.log('scrollY -->', window.scrollY)
     if (window.scrollY >= webpageHeight * 0.15) {
-        console.log('first section')
-        
+        locationOne.style.backgroundColor = 'red'
+        isActive.L1 = true;
+    } else {
+        locationOne.style.backgroundColor = 'rgb(238, 218, 218)'
+        isActive.L1 = false;
     }
 
     if (window.scrollY >= webpageHeight * 0.25) {
-        console.log('second section')
+        locationTwo.style.backgroundColor = 'red'
+        isActive.L2 = true;
+    } else {
+        locationTwo.style.backgroundColor = 'rgb(238, 218, 218)'
+        isActive.L2 = false;
     }
+
     if (window.scrollY >= webpageHeight * 0.35) {
-        console.log('third section')
+        locationThree.style.backgroundColor = 'red'
+        isActive.L3 = true;
+    } else {
+        locationThree.style.backgroundColor = 'rgb(238, 218, 218)'
+        isActive.L3 = false;
     }
     if (window.scrollY >= webpageHeight * 0.45) {
-        console.log('fourth section')
+        locationFour.style.backgroundColor = 'red'
+        isActive.L4 = true;
+    } else {
+        locationFour.style.backgroundColor = 'rgb(238, 218, 218)'
+        isActive.L4 = false;
     }
+
+    console.log('isActive obj -->', isActive)
+
+    
 })
 
 

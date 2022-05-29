@@ -13,7 +13,7 @@ let locationArr = document.querySelectorAll('.location')
 let locationCounter = []
 
 const changeLineHeight = () => {
-    if (window.scrollY < webpageHeight * 0.45) {
+    if (locationCounter.length < 4) {
         locationLine.style.height = ((locationCounter.length / locationArr.length) * 100) + '%'
     }
 }
@@ -27,13 +27,12 @@ function decreaseLineHeight() {
 window.addEventListener('scroll',() => {
 
     if (window.scrollY > 350) {
-        console.log('PASSED 299')
-        locationOne.style.backgroundColor = 'rgb(235, 174, 174)'
         locationCounter[0] = 1;
+        locationOne.style.borderColor = 'rgb(235, 174, 174)'
         changeLineHeight()
          
     } else {
-        locationOne.style.backgroundColor = 'rgb(238, 218, 218)'
+        locationOne.style.borderColor = 'rgb(238, 218, 218)'
         locationCounter = []
         decreaseLineHeight()
          
@@ -41,39 +40,42 @@ window.addEventListener('scroll',() => {
 
     if (window.scrollY > 650) {
         locationCounter[1] = 2
-        locationTwo.style.backgroundColor = 'rgb(235, 174, 174)'
+        locationTwo.style.borderColor = 'rgb(235, 174, 174)'
         changeLineHeight()
     
          
     } else {
-        locationTwo.style.backgroundColor = 'rgb(238, 218, 218)'
+        locationTwo.style.borderColor = 'rgb(238, 218, 218)'
         locationCounter.splice(1,1)
         decreaseLineHeight()
     }
 
     if (window.scrollY > 850) {
         locationCounter[2] = 3;
-        locationThree.style.backgroundColor = 'rgb(235, 174, 174)'
+        locationThree.style.borderColor = 'rgb(235, 174, 174)'
         changeLineHeight()
        
     } else {
-        locationThree.style.backgroundColor = 'rgb(238, 218, 218)'
+        locationThree.style.borderColor = 'rgb(238, 218, 218)'
          locationCounter.splice(2,1)
          decreaseLineHeight()
     }
+
     if (window.scrollY > 1000) {
         locationCounter[3] = 4;
-        locationFour.style.backgroundColor = 'rgb(235, 174, 174)'
-        // changeLineHeight()
-         
+        locationFour.style.borderColor = 'rgb(235, 174, 174)'
       
     } else {
-        locationFour.style.backgroundColor = 'rgb(238, 218, 218)'
-         locationCounter.splice(3,1)
+        locationFour.style.borderColor = 'rgb(238, 218, 218)'
+        locationCounter.splice(3,1)
     
     }
 
 
     console.log('scroll y -->',window.scrollY)
+
+    console.log('location counter -->', locationCounter)
+
+    console.log('webpage height -->', webpageHeight * 0.45)
 })
 

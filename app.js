@@ -8,12 +8,10 @@ const webpageHeight = document.documentElement.scrollHeight
 
 let locationArr = document.querySelectorAll('.location')
 
-const isActive = {
-    L1: false,
-    L2: false,
-    L3: false,
-    L4: false
-}
+console.log('location array length -->', locationArr)
+
+
+let locationCounter = []
 
 
 
@@ -24,37 +22,45 @@ window.addEventListener('scroll',() => {
     console.log('scrollY -->', window.scrollY)
     if (window.scrollY >= webpageHeight * 0.15) {
         locationOne.style.backgroundColor = 'red'
-        isActive.L1 = true;
+        locationCounter[0] = 1;
+         
     } else {
         locationOne.style.backgroundColor = 'rgb(238, 218, 218)'
-        isActive.L1 = false;
+        locationCounter = []
+         
     }
 
     if (window.scrollY >= webpageHeight * 0.25) {
         locationTwo.style.backgroundColor = 'red'
-        isActive.L2 = true;
+        locationCounter[1] = 2
+    
+         
     } else {
         locationTwo.style.backgroundColor = 'rgb(238, 218, 218)'
-        isActive.L2 = false;
+        locationCounter.splice(1,1)
+         
     }
 
     if (window.scrollY >= webpageHeight * 0.35) {
         locationThree.style.backgroundColor = 'red'
-        isActive.L3 = true;
+         locationCounter[2] = 3;
+       
     } else {
         locationThree.style.backgroundColor = 'rgb(238, 218, 218)'
-        isActive.L3 = false;
+         locationCounter.splice(2,1)
     }
     if (window.scrollY >= webpageHeight * 0.45) {
         locationFour.style.backgroundColor = 'red'
-        isActive.L4 = true;
+        locationCounter[3] = 4;
+         
+      
     } else {
         locationFour.style.backgroundColor = 'rgb(238, 218, 218)'
-        isActive.L4 = false;
+         locationCounter.splice(3,1)
+    
     }
 
-    console.log('isActive obj -->', isActive)
+    console.log('location counter -->', locationCounter)
 
 })
-
 

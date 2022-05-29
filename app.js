@@ -22,11 +22,14 @@ function decreaseLineHeight() {
     locationLine.style.height = ((locationCounter.length / locationArr.length) * 100) + '%'
 }
 
+
+
 window.addEventListener('scroll',() => {
 
-    if (window.scrollY >= webpageHeight * 0.15) {
-        locationCounter[0] = 1;
+    if (window.scrollY > 299) {
+        console.log('PASSED 299')
         locationOne.style.backgroundColor = 'red'
+        locationCounter[0] = 1;
         changeLineHeight()
          
     } else {
@@ -51,17 +54,17 @@ window.addEventListener('scroll',() => {
     if (window.scrollY >= webpageHeight * 0.35) {
         locationCounter[2] = 3;
         locationThree.style.backgroundColor = 'red'
-        changeLineHeight()
+        // changeLineHeight()
        
     } else {
         locationThree.style.backgroundColor = 'rgb(238, 218, 218)'
          locationCounter.splice(2,1)
          decreaseLineHeight()
     }
-    if (window.scrollY >= webpageHeight * 0.45) {
+    if (window.scrollY >= webpageHeight * 0.52) {
         locationCounter[3] = 4;
         locationFour.style.backgroundColor = 'red'
-        changeLineHeight()
+        // changeLineHeight()
          
       
     } else {
@@ -71,6 +74,6 @@ window.addEventListener('scroll',() => {
     }
 
 
-    
+    console.log('scroll y -->',window.scrollY)
 })
 

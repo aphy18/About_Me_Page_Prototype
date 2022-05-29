@@ -8,7 +8,6 @@ const webpageHeight = document.documentElement.scrollHeight
 
 let locationArr = document.querySelectorAll('.location')
 
-console.log('location array length -->', locationArr)
 
 
 let locationCounter = []
@@ -60,7 +59,9 @@ window.addEventListener('scroll',() => {
     
     }
 
-    console.log('location counter -->', locationCounter)
+    console.log('location counter -->', locationCounter.length)
+    console.log('locationArr -->', locationArr.length)
 
+    locationLine.style.height = ((locationCounter.length / locationArr.length) * 79) + '%'
 })
 

@@ -55,7 +55,6 @@ window.addEventListener('scroll',() => {
 
     console.log('isActive obj -->', isActive)
 
-    
 })
 
 

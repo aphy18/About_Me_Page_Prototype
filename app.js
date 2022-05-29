@@ -15,7 +15,7 @@ const changeLineHeight = () => {
 
 window.addEventListener('scroll',() => {
 
-    if (window.scrollY > 350) {
+    if (window.scrollY > 140) {
         locationCounter[0] = 'about';
         locationOne.style.borderColor = 'rgb(235, 174, 174)'
         changeLineHeight()
@@ -39,7 +39,7 @@ window.addEventListener('scroll',() => {
         changeLineHeight()
     }
 
-    if (window.scrollY > 850) {
+    if (window.scrollY > 920) {
         locationCounter[2] = 'goals';
         locationThree.style.borderColor = 'rgb(235, 174, 174)'
         changeLineHeight()
@@ -50,7 +50,7 @@ window.addEventListener('scroll',() => {
          changeLineHeight()
     }
 
-    if (window.scrollY > 1000) {
+    if (window.scrollY >= 1040) {
         locationCounter[3] = 'contact';
         locationFour.style.borderColor = 'rgb(235, 174, 174)'
       

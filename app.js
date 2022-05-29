@@ -12,45 +12,56 @@ let locationArr = document.querySelectorAll('.location')
 
 let locationCounter = []
 
+const changeLineHeight = () => {
+    if (window.scrollY < webpageHeight * 0.45) {
+        locationLine.style.height = ((locationCounter.length / locationArr.length) * 100) + '%'
+    }
+}
 
-
+function decreaseLineHeight() {
+    locationLine.style.height = ((locationCounter.length / locationArr.length) * 100) + '%'
+}
 
 window.addEventListener('scroll',() => {
 
-
-    console.log('scrollY -->', window.scrollY)
     if (window.scrollY >= webpageHeight * 0.15) {
-        locationOne.style.backgroundColor = 'red'
         locationCounter[0] = 1;
+        locationOne.style.backgroundColor = 'red'
+        changeLineHeight()
          
     } else {
         locationOne.style.backgroundColor = 'rgb(238, 218, 218)'
         locationCounter = []
+        decreaseLineHeight()
          
     }
 
     if (window.scrollY >= webpageHeight * 0.25) {
-        locationTwo.style.backgroundColor = 'red'
         locationCounter[1] = 2
+        locationTwo.style.backgroundColor = 'red'
+        changeLineHeight()
     
          
     } else {
         locationTwo.style.backgroundColor = 'rgb(238, 218, 218)'
         locationCounter.splice(1,1)
-         
+        decreaseLineHeight()
     }
 
     if (window.scrollY >= webpageHeight * 0.35) {
+        locationCounter[2] = 3;
         locationThree.style.backgroundColor = 'red'
-         locationCounter[2] = 3;
+        changeLineHeight()
        
     } else {
         locationThree.style.backgroundColor = 'rgb(238, 218, 218)'
          locationCounter.splice(2,1)
+         decreaseLineHeight()
     }
     if (window.scrollY >= webpageHeight * 0.45) {
-        locationFour.style.backgroundColor = 'red'
         locationCounter[3] = 4;
+        locationFour.style.backgroundColor = 'red'
+        changeLineHeight()
          
       
     } else {
@@ -59,9 +70,7 @@ window.addEventListener('scroll',() => {
     
     }
 
-    console.log('location counter -->', locationCounter.length)
-    console.log('locationArr -->', locationArr.length)
 
-    locationLine.style.height = ((locationCounter.length / locationArr.length) * 79) + '%'
+    
 })
 

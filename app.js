@@ -1,13 +1,4 @@
-let h1One = document.querySelector('.h1-one');
-let h1Two = document.querySelector('.h1-two');
-let h1Three = document.querySelector('.h1-three');
-let h1Four = document.querySelector('.h1-four');
-
-// let coordinatesOne= h1One.getBoundingClientRect();
-// let coordinatesTwo= h1Two.getBoundingClientRect();
-// let coordinatesThree= h1Three.getBoundingClientRect();
-// let coordinatesFour = h1Four.getBoundingClientRect();
-
+let locationContainer = document.querySelector('.location-container')
 
 
 const webpageHeight = document.documentElement.scrollHeight

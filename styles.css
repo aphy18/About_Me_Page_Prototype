@@ -2,12 +2,10 @@ body {
     width: 100%;
     overflow: scroll;
     margin: 0;
-    border: 2px solid red;
+    /* border: 2px solid red; */
     height: 200vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
 }
+
 
 .nav-bar {
     border: 2px solid black;
@@ -52,3 +50,29 @@ body {
     transform: scaleX(1)
 }
 
+.master-container {
+    border: 2px solid blue;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.location-container {
+    border: 2px solid black;
+    width: 70px;
+    height: 80%;
+    margin-left: 6%;
+    z-index: 2;
+    background-color: red;
+}
+
+.text-container {
+    border: 2px solid green;
+    width: 600px;
+    height: 80%;
+    margin-right: 6%;
+    background-color: green;
+}

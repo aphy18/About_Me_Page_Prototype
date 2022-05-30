@@ -23,11 +23,12 @@ body {
     justify-content: space-evenly;
     align-items: center;
     /* border: 2px solid red; */
-    list-style: none;
+    text-decoration: none;
     width: 230px;
     height: 50px;
     color: white;
     font-size: 22px;
+    cursor: pointer;
 }
 
 
@@ -58,7 +59,7 @@ body {
 
 
 .location-container {
-    border: 2px solid black;
+    /* border: 2px solid black; */
     width: 200px;
     height: 80%;
     margin-left: 6%;
@@ -108,7 +109,7 @@ body {
 
 .text-container {
     border: 2px solid black;
-    width: 60%;
+    width: 70%;
     height: 80%;
     margin-right: 6%;
     background-color: white;
@@ -116,8 +117,22 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    align-items: flex-start;
+    align-items: center;
 }
+
+.description {
+    font-size: 25px;
+}
+
+/* .hobbies {
+    border: 2px solid black;
+    width: 80%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 50px;
+} */
 
 
 .category {
@@ -141,3 +156,4 @@ body {
 #contact {
     height: 10%;
 }
+

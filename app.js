@@ -39,7 +39,7 @@ window.addEventListener('scroll',() => {
         changeLineHeight()
     }
 
-    if (window.scrollY > 920) {
+    if (window.scrollY > 960) {
         locationCounter[2] = 'goals';
         locationThree.style.borderColor = 'rgb(235, 174, 174)'
         changeLineHeight()
@@ -51,8 +51,10 @@ window.addEventListener('scroll',() => {
     }
 
     if (window.scrollY >= 1040) {
+        setTimeout(() => {
+            locationFour.style.borderColor = 'rgb(235, 174, 174)'
+        }, 120)
         locationCounter[3] = 'contact';
-        locationFour.style.borderColor = 'rgb(235, 174, 174)'
       
     } else {
         locationFour.style.borderColor = 'rgb(238, 218, 218)'

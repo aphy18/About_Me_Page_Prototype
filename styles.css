@@ -18,7 +18,7 @@ body {
     height: 45px;
     position: sticky;
     top: 0;
-    z-index: 20;
+    z-index: 5;
 }
 
 .nav-item {
@@ -63,7 +63,7 @@ body {
 
 
 .location-container {
-    /* border: 2px solid black; */
+    border: 2px solid black;
     width: 200px;
     height: 80%;
     margin-left: 6%;

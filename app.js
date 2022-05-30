@@ -4,6 +4,8 @@ let locationThree = document.getElementById('location-three')
 let locationFour = document.getElementById('location-four')
 let locationLine = document.querySelector('.location-line')
 let locationArr = document.querySelectorAll('.location')
+let about = document.getElementById('about-link')
+let projects = document.getElementById('projects-link')
 let locationCounter = []
 
 const changeLineHeight = () => {
@@ -11,6 +13,16 @@ const changeLineHeight = () => {
         locationLine.style.height = ((locationCounter.length / locationArr.length) * 120) + '%'
     }
 }
+
+about.addEventListener('click',() => {
+    locationCounter.splice(1,3)
+})
+
+projects.addEventListener('click',() => {
+    locationCounter.splice(2,1)
+})
+
+
 
 
 window.addEventListener('scroll',() => {

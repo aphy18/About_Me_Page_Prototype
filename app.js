@@ -50,7 +50,7 @@ window.addEventListener('scroll',() => {
          changeLineHeight()
     }
 
-    if (window.scrollY >= 1040) {
+    if (window.scrollY >= 1010) {
         setTimeout(() => {
             locationFour.style.borderColor = 'rgb(235, 174, 174)'
         }, 120)

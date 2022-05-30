@@ -6,6 +6,7 @@ let locationLine = document.querySelector('.location-line')
 let locationArr = document.querySelectorAll('.location')
 let about = document.getElementById('about-link')
 let projects = document.getElementById('projects-link')
+let goals = document.getElementById('goals-link')
 let locationCounter = []
 
 const changeLineHeight = () => {
@@ -19,6 +20,10 @@ about.addEventListener('click',() => {
 })
 
 projects.addEventListener('click',() => {
+    locationCounter.splice(1,3)
+})
+
+goals.addEventListener('click', () => {
     locationCounter.splice(2,1)
 })
 

@@ -172,3 +172,17 @@ body {
     height: 10%;
 }
 
+
+
+.swiper {
+    border: 2px solid black;
+    width: 1000px;
+    height: 300px;
+}
+
+
+.swiper-wrapper {
+    /* border: 2px solid red; */
+    width: 60%;
+    height: 60%;
+}

@@ -15,6 +15,12 @@ const changeLineHeight = () => {
     }
 }
 
+function changeProperties(index, keyword, location) {
+    locationCounter[index] = keyword;
+    location.style.borderColor = 'rgb(235, 174, 174)'
+}
+
+
 about.addEventListener('click',() => {
     locationCounter.splice(1,3)
 })
@@ -26,14 +32,6 @@ projects.addEventListener('click',() => {
 goals.addEventListener('click', () => {
     locationCounter.splice(2,1)
 })
-
-
-function changeProperties(index, keyword, location) {
-    locationCounter[index] = keyword;
-    location.style.borderColor = 'rgb(235, 174, 174)'
-}
-
-
 
 
 

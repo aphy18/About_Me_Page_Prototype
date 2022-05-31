@@ -63,7 +63,7 @@ body {
 
 
 .location-container {
-    border: 2px solid black;
+    /* border: 2px solid black; */
     width: 200px;
     height: 80%;
     margin-left: 6%;
@@ -94,7 +94,7 @@ body {
     position: absolute;
     top: 2.5%;
     background-color: rgb(235, 174, 174);
-    transition: height 0.3s ease-out;
+    transition: height 0.6s ease-out;
 
 }
 

@@ -107,9 +107,13 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: border 0.2s ease-in; 
+    transition: all 0.2s ease-in; 
     font-size: 20px;
     font-weight: bolder;
+}
+
+.active-location {
+    background-color: rgb(235, 174, 174);
 }
 
 .text-container {
@@ -161,7 +165,7 @@ body {
 }
 
 #goals {
-    height: 34%;
+    height: 36%;
 }
 
 #contact {

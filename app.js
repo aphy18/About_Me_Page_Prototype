@@ -85,3 +85,6 @@ window.addEventListener('scroll',() => {
     console.log('location counter -->', locationCounter)
 })
 
+
+
+

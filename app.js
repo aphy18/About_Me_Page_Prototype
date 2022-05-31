@@ -28,13 +28,19 @@ goals.addEventListener('click', () => {
 })
 
 
+function changeProperties(index, keyword, location) {
+    locationCounter[index] = keyword;
+    location.style.borderColor = 'rgb(235, 174, 174)'
+}
+
+
+
 
 
 window.addEventListener('scroll',() => {
 
     if (window.scrollY > 140) {
-        locationCounter[0] = 'about';
-        locationOne.style.borderColor = 'rgb(235, 174, 174)'
+        changeProperties(0,'about',locationOne)
         changeLineHeight()
          
     } else {
@@ -45,8 +51,7 @@ window.addEventListener('scroll',() => {
     }
 
     if (window.scrollY > 650) {
-        locationCounter[1] = 'projects'
-        locationTwo.style.borderColor = 'rgb(235, 174, 174)'
+        changeProperties(1,'projects',locationTwo)
         changeLineHeight()
     
          
@@ -57,8 +62,7 @@ window.addEventListener('scroll',() => {
     }
 
     if (window.scrollY > 960) {
-        locationCounter[2] = 'goals';
-        locationThree.style.borderColor = 'rgb(235, 174, 174)'
+        changeProperties(2,'goals',locationThree)
         changeLineHeight()
        
     } else {
@@ -69,9 +73,9 @@ window.addEventListener('scroll',() => {
 
     if (window.scrollY >= 1010) {
         setTimeout(() => {
-            locationFour.style.borderColor = 'rgb(235, 174, 174)'
+            changeProperties(3,'contact',locationFour)
         }, 120)
-        locationCounter[3] = 'contact';
+        
       
     } else {
         locationFour.style.borderColor = 'rgb(238, 218, 218)'

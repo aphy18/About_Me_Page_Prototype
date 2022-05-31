@@ -48,7 +48,7 @@ window.addEventListener('scroll',() => {
          
     }
 
-    if (window.scrollY > 650) {
+    if (window.scrollY > 580) {
         changeProperties(1,'projects',locationTwo)
         changeLineHeight()
     
@@ -59,7 +59,7 @@ window.addEventListener('scroll',() => {
         changeLineHeight()
     }
 
-    if (window.scrollY > 960) {
+    if (window.scrollY > 900) {
         changeProperties(2,'goals',locationThree)
         changeLineHeight()
        
@@ -86,7 +86,4 @@ window.addEventListener('scroll',() => {
 
     console.log('location counter -->', locationCounter)
 })
-
-
-
 

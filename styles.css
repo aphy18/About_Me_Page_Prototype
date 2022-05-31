@@ -223,6 +223,7 @@ body {
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
+    background-color: black;
 }
 
 .NW {
@@ -231,6 +232,10 @@ body {
     height: 70%;
     border: 2px solid black;
     margin-top: 50px;
+}
+
+#NW-1 {
+    margin-top: 800px;
 }
 
 .about-project-container {

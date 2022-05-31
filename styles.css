@@ -216,7 +216,7 @@ body {
 .picture-scroll-container {
     width: 48%;
     height: 500px;
-    /* border: 2px solid green; */
+    /* border: 2px solid blue; */
     overflow: hidden;
     overflow-y: scroll;
     display: flex;
@@ -228,6 +228,7 @@ body {
 .NW {
     object-fit: cover;
     width: 90%;
+    height: 70%;
     border: 2px solid black;
     margin-top: 50px;
 }

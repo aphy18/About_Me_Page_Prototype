@@ -69,7 +69,7 @@ window.addEventListener('scroll',() => {
          changeLineHeight()
     }
 
-    if (window.scrollY >= 1010) {
+    if (window.scrollY >= 930) {
         setTimeout(() => {
             changeProperties(3,'contact',locationFour)
         }, 120)

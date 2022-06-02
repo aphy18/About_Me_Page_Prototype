@@ -167,6 +167,8 @@ body {
 
 #goals {
     height: 36%;
+    display: flex;
+
 }
 
 #contact {
@@ -277,4 +279,21 @@ body {
     text-decoration: underline;
     font-size: 22px;
     color: white;
+}
+
+.goals-container {
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    width: 25%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space between;
+    align-items: center;
+}
+
+.goals-list {
+    width: 300px;
+    height: 80%;
+    border: 2px solid red;
 }

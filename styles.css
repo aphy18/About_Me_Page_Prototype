@@ -291,23 +291,16 @@ body {
 
 .goals-container {
     /* border-top: 2px dotted black; */
-    width: 24%;
+    width: 25%;
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space between;
     align-items: center;
     background-color: rgb(152, 205, 240);
+    font-weight: bolder;
 
 }
-
-
-
-#long-term-goals {
-    width: 31%;
-}
-
-
 
 
 .goals-header {
@@ -321,15 +314,19 @@ body {
     /* border: 2px solid red; */
     display: flex;
     justify-content: flex-start;
+    margin-left: 1%;
 }
 
 .goals-list {
-    width: 300px;
+    width: 350px;
     height: 80%;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: flex-start;
-    /* border: 2px solid black; */
+    border: 2px solid black;
     font-size: 20px;
+    flex-wrap: wrap;
+    background-color: rgb(191, 221, 240);
 }
+

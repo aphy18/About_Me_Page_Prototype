@@ -17,8 +17,9 @@ const changeLineHeight = () => {
 
 function changeProperties(index, keyword, location) {
     locationCounter[index] = keyword;
-    location.style.borderColor = 'rgb(235, 174, 174)'
+    location.style.borderColor = 'rgb(41, 128, 179)'
 }
+
 
 
 about.addEventListener('click',() => {

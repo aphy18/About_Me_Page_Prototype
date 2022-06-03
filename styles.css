@@ -13,7 +13,7 @@ body {
 
 .nav-bar {
     border: 2px solid black;
-    background-color: black;
+    background-color: rgb(41, 128, 179);
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -95,7 +95,7 @@ body {
     z-index: -1;
     position: absolute;
     top: 2.5%;
-    background-color: rgb(235, 174, 174);
+    background-color: rgb(41, 128, 179);
     transition: height 0.6s ease-out;
 
 }
@@ -114,9 +114,9 @@ body {
     font-weight: bolder;
 }
 
-.active-location {
-    background-color: rgb(235, 174, 174);
-}
+/* .active-location {
+    background-color: rgb(41, 128, 179);
+} */
 
 .text-container {
     /* border: 2px solid black; */
@@ -185,7 +185,7 @@ body {
     /* border-bottom: 2px solid black; */
     width: 100%;
     height: 100%;
-    background-color: rgb(204, 183, 183);
+    background-color: rgb(191, 221, 240);
 }
 
 
@@ -193,7 +193,6 @@ body {
     /* border: 2px solid red; */
     width: 60%;
     height: 60%;
-    padding-bottom: 1%;
 }
 
 .swiper-slide {
@@ -230,7 +229,7 @@ body {
 }
 
 .picture-scroll-container {
-    width: 46%;
+    width: 47%;
     height: 500px;
     overflow: hidden;
     overflow-y: scroll;
@@ -238,9 +237,10 @@ body {
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    background-color: rgb(235, 174, 174);
+    background-color: rgb(191, 221, 240);
     padding-bottom: 50px;
-    /* border: 2px solid black; */
+    border: 0.5px solid black;
+    border-left: none;
 }
 
 .NW {
@@ -263,19 +263,20 @@ body {
 }
 
 .about-project-container {
-    width: 47%;
+    width: 55%;
     height: 500px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     padding-left: 0.5%;
     padding-bottom: 51px;
-    font-size: 21px;
-    margin-right: 0.5%;
-    color: white;
-    background-color: rgb(134, 122, 122);
+    font-size: 23px;
+    /* margin-right: 0.5%; */
+    /* color: white; */
+    background-color: rgb(141, 204, 247);
     line-height: 2rem;
-    border: 2px solid black;
+    border: 0.5px solid black;
+    border-right: none;
 }
 
 #project-description {
@@ -285,7 +286,7 @@ body {
 .github-link {
     text-decoration: underline;
     font-size: 22px;
-    color: white;
+    /* color: white; */
 }
 
 .goals-container {
@@ -296,16 +297,11 @@ body {
     flex-direction: column;
     justify-content: space between;
     align-items: center;
-    background-color: rgb(204, 183, 183);
+    background-color: rgb(152, 205, 240);
 
 }
 
-/* #short-term-goals,
-#mid-term-goals,
-#long-term-goals {
-    border-right: 2px dotted black;
-    transition: border 0.3s ease;
-} */
+
 
 #long-term-goals {
     width: 31%;

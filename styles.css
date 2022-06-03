@@ -119,7 +119,7 @@ body {
 }
 
 .text-container {
-    border: 2px solid black;
+    /* border: 2px solid black; */
     width: 85%;
     height: 80%;
     margin-right: 0.5%;
@@ -142,7 +142,7 @@ body {
 }
 
 .hobbies {
-    border: 2px solid black;
+    /* border: 2px solid black; */
     width: 80%;
     height: 20%;
     display: flex;
@@ -165,6 +165,7 @@ body {
 
 #projects {
     height: 45%;
+    border-bottom: none;
 }
 
 #goals {
@@ -192,6 +193,7 @@ body {
     /* border: 2px solid red; */
     width: 60%;
     height: 60%;
+    padding-bottom: 1%;
 }
 
 .swiper-slide {
@@ -230,14 +232,15 @@ body {
 .picture-scroll-container {
     width: 46%;
     height: 500px;
-    /* border: 2px solid black; */
     overflow: hidden;
     overflow-y: scroll;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    background-color: rgb(204, 183, 183);
+    background-color: rgb(235, 174, 174);
+    padding-bottom: 50px;
+    /* border: 2px solid black; */
 }
 
 .NW {
@@ -266,11 +269,13 @@ body {
     flex-direction: column;
     justify-content: space-evenly;
     padding-left: 0.5%;
+    padding-bottom: 51px;
     font-size: 21px;
     margin-right: 0.5%;
     color: white;
     background-color: rgb(134, 122, 122);
     line-height: 2rem;
+    border: 2px solid black;
 }
 
 #project-description {
@@ -284,15 +289,30 @@ body {
 }
 
 .goals-container {
-    border-left: 2px solid black;
-    border-right: 2px solid black;
-    width: 25%;
+    /* border-top: 2px dotted black; */
+    width: 24%;
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space between;
     align-items: center;
+    background-color: rgb(204, 183, 183);
+
 }
+
+/* #short-term-goals,
+#mid-term-goals,
+#long-term-goals {
+    border-right: 2px dotted black;
+    transition: border 0.3s ease;
+} */
+
+#long-term-goals {
+    width: 31%;
+}
+
+
+
 
 .goals-header {
     text-decoration: underline;

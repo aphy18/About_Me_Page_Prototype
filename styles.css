@@ -161,6 +161,7 @@ body {
 
 #about {
     height: 32%;
+    border-top: none;
 }
 
 #projects {
@@ -178,6 +179,7 @@ body {
     height: 8%;
     background-color: rgb(191, 221, 240);
     border: none;
+    border-top: 2px solid rgb(41, 128, 179);
 }
 
 
@@ -334,6 +336,6 @@ body {
     transform: scale(1.04);
 }
 
-#contact {
-    border-top: rgb(41, 128, 179);
+#completed-goals {
+    border-bottom: rgb(41, 128, 179);
 }

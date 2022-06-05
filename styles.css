@@ -132,7 +132,7 @@ body {
 }
 
 .about-one {
-    border: 2px solid black;
+    /* border: 2px solid black; */
     width: 1200px;
     height: 90%;
 }
@@ -140,9 +140,9 @@ body {
 .my-photo {
     border: 3px solid black;
     border-radius: 50%;
-    width: 300px;
-    height: 300px;
-    margin-left: 1%;
+    width: 250px;
+    height: 250px;
+    transform: translate(25px,-30px)
 }
 
 .description {
@@ -198,6 +198,9 @@ body {
     background-color: rgb(191, 221, 240);
     border: none;
     border-top: 2px solid rgb(41, 128, 179);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
 }
 
 
@@ -356,4 +359,10 @@ body {
 
 #completed-goals {
     border-bottom: rgb(41, 128, 179);
+}
+
+.my-github,
+.my-email {
+    font-size: 30px;
+    margin: 20px;
 }

@@ -117,7 +117,7 @@ body {
 
 .text-container {
     /* border: 10px solid black; */
-    width: 1400px;
+    width: 1500px;
     height: 2000px;
     margin: 0.5%;
     border: 2px solid rgb(41, 128, 179);
@@ -283,7 +283,7 @@ body {
 
 .about-project-container {
     /* width: 700px; */
-    width: 50%;
+    width: 40%;
     height: 400px;
     display: flex;
     flex-direction: column;

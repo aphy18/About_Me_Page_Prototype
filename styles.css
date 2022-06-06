@@ -12,7 +12,7 @@ body {
 
 
 .nav-bar {
-    border: 2px solid black;
+    /* border: 2px solid black; */
     background-color: rgb(41, 128, 179);
     display: flex;
     justify-content: flex-end;
@@ -55,7 +55,7 @@ body {
 }
 
 .master-container {
-    border: 2px solid blue;
+    /* border: 2px solid blue; */
     width: 100%;
     height: 2300px;
     display: flex;
@@ -127,7 +127,7 @@ body {
     justify-content: space-around;
     align-items: center;
     /* background-color: rgb(152, 205, 240); */
-    /* background-color: black; */
+    background-color: rgb(152, 205, 240);
 }
 
 .about-one {
@@ -322,7 +322,7 @@ body {
 }
 
 .goals-container {
-    border-top: 2px solid black;
+    /* border-top: 2px solid black; */
     width: 25%;
     height: 100%;
     display: flex;
@@ -383,15 +383,6 @@ body {
     }
 }
 
-@media (max-width: 1700px) {
-    /* .master-container {
-        height: 2000px;
-    } */
-
-    .text-container {
-        margin-top: 200px;
-    }
-}
 
 @media (max-width: 1500px) {
     #about {
@@ -400,8 +391,12 @@ body {
         /* border: 2px solid black */
         justify-content: center;
         align-items: center;
-        border: 10px solid black;
-        height: 500px;
+        /* border: 10px solid black; */
+        height: 650px;
+    }
+
+    #projects {
+        height: 725px;
     }
 
     #about .my-photo {
@@ -416,14 +411,13 @@ body {
         justify-content: center;
         align-items: center;
         height: 300px;
-        border: 2px solid black;
+        /* border: 2px solid black; */
     }
 
     .about-one .description {
         width: 90%;
         height: 80%;
-        margin-top: 0.5%;
-        line-height: normal;
+        align-items: center;
     }
 
     .about-one .hobbies {
@@ -437,19 +431,6 @@ body {
 
 @media (max-width: 1200px) {
 
-    .text-container {
-        /* padding-top: 60px; */
-        /* margin-top: 500px; */
-        /* border: 10px solid red; */
-        height: 100%;
-        margin-top: 20%;
-    }
-
-
-    #projects {
-        height: 700px;
-    }
- 
     .swiper {
         width: 100%;
         height: 100%;
@@ -498,12 +479,12 @@ body {
 
     .description-box .picture-scroll-container {
         width: 100%;
-        height: 40%;
+        height: 400px;
     }
 
 
    .NW {
-       width: 550px;
+       width: 70%;
        height: 500px;
    }
 
@@ -521,47 +502,28 @@ body {
 }
 
 
-@media (max-width: 600px) {
-
-    .project-name {
-        font-size: 30px;
-    }
-        
-
-    .description-box {
-        width: 100%;
-        padding-left: 3%;
-    }
-
-    .description-box .about-project-container,
-    .description-box .picture-scroll-container {
-        width: 100%;
-    }   
-
-    #contact {
-        padding-top: 300px;
-    }
-
-}
-
 @media(max-width: 1800px) {
+    .text-container {
+    margin: 0;
+    height: 2200px;
+   }
+
     #goals {
-        height: 600px;
+        height: 800px;
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
     }
  
     .goals-container {
-     border: 2px solid red;
+     /* border: 2px solid red; */
      width: 50%;
-     height: 40%;
-     align-items: flex-start;
+     height: 350px;
+     align-items: center;
     }
  
     .goals-list {
-        width: 50%;
+        width: 500px;
         height: 65%;
-        width: 100%;
     }
 }

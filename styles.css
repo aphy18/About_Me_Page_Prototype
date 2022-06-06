@@ -55,9 +55,9 @@ body {
 }
 
 .master-container {
-    /* border: 2px solid blue; */
+    border: 2px solid blue;
     width: 100%;
-    height: 100%;
+    height: 2300px;
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
@@ -101,8 +101,8 @@ body {
 }
 
 .location {
-    width: 60%;
-    height: 7%;
+    width: 130px;
+    height: 130px;
     border: 4px solid rgb(238, 218, 218);
     background-color: rgb(238, 218, 218);
     border-radius: 50%;
@@ -114,28 +114,27 @@ body {
     font-weight: bolder;
 }
 
-/* .active-location {
-    background-color: rgb(41, 128, 179);
-} */
 
 .text-container {
-    /* border: 2px solid black; */
-    width: 85%;
-    height: 80%;
-    margin-bottom: 2%;
+    /* border: 10px solid black; */
+    width: 1400px;
+    height: 2000px;
+    margin: 0.5%;
     border: 2px solid rgb(41, 128, 179);
     /* border: 2px solid black; */
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    background-color: rgb(152, 205, 240);
+    /* background-color: rgb(152, 205, 240); */
+    /* background-color: black; */
 }
 
 .about-one {
-    border: 2px solid black;
+    /* border: 10px solid black; */
     width: 1200px;
     height: 400px;
+    /* background-color: red; */
 }
 
 .my-photo {
@@ -183,6 +182,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: rgb(152, 205, 240);
 }
 
 #projects {
@@ -343,8 +343,8 @@ body {
 
 
 .goals-list {
-    width: 340px;
-    height: 80%;
+    width: 280px;
+    height: 300px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -383,12 +383,23 @@ body {
     }
 }
 
+@media (max-width: 1700px) {
+    /* .master-container {
+        height: 2000px;
+    } */
+
+    .text-container {
+        margin-top: 200px;
+    }
+}
 
 @media (max-width: 1500px) {
     #about {
         flex-direction: column;
         /* background-color: black; */
         /* border: 2px solid black */
+        justify-content: center;
+        align-items: center;
         border: 10px solid black;
         height: 500px;
     }
@@ -404,7 +415,7 @@ body {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        height: 55%;
+        height: 300px;
         border: 2px solid black;
     }
 
@@ -436,7 +447,7 @@ body {
 
 
     #projects {
-        height: 1000px;
+        height: 700px;
     }
  
     .swiper {
@@ -506,9 +517,6 @@ body {
     #TA-1 {
     margin-top: 900px;
    }
-
-
-  
 
 }
 

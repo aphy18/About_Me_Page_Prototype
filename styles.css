@@ -400,8 +400,7 @@ body {
         padding-top: 60px;
     }
 
-    #about,
-    .description-box {
+    #about {
         flex-direction: column;
         height: 600px;
         /* border: 2px solid black */
@@ -428,11 +427,14 @@ body {
         width: 300px;
     }
 
+    #projects {
+        height: 1000px;
+    }
  
     .swiper {
-        width: 800px;
-        height: 800px;
-        /* border: 2px solid blue; */
+        width: 100%;
+        height: 100%;
+        border: 2px solid blue;
         display: flex;
     }
 
@@ -443,20 +445,20 @@ body {
     }
 
     .swiper-slide {
-        /* border: 2px solid red; */
+        border: 2px solid red;
         justify-content: center;
-        align-items: flex-start;
+        align-items: center;
     }
 
 
     .project-name {
         /* font-size: 24px; */
         align-self: center;
-        margin-right: 17%;
+        /* margin-right: 17%; */
     }
 
     .description-box {
-        /* border: 2px solid green; */
+        border: 2px solid green;
         height: 88%;
         width: 80%;
         flex-direction: column-reverse;
@@ -465,8 +467,8 @@ body {
     }
 
     .description-box .about-project-container {
-        width: 600px;
-        height: 250px;
+        width: 100%;
+        height: 40%;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -476,8 +478,8 @@ body {
     }   
 
     .description-box .picture-scroll-container {
-        width: 600px;
-        height: 300px;
+        width: 100%;
+        height: 40%;
     }
 
 
@@ -497,17 +499,18 @@ body {
     margin-top: 900px;
    }
 
+   #goals {
+       /* background-color: black; */
+       padding-top: 100px;
+   }
+
 }
 
 
 @media (max-width: 600px) {
 
-    .project-name {
-        font-size: 25px;
-        margin-right: 40%;
-    }
     .description-box {
-        width: 50%;
+        width: 100%;
         padding-left: 3%;
     }
 

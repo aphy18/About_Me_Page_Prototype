@@ -67,17 +67,18 @@ body {
 
 .location-container {
     /* border: 2px solid black; */
-    width: 200px;
+    width: 250px;
     height: 80%;
     margin-left: 3%;
     margin-bottom: 2%;
     z-index: 2;
-    /* background-color: red; */
+    /* background-color: rgb(152, 205, 240); */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    position: relative
+    position: relative;
+    
 }
 
 /* remember the location line is a container for before */
@@ -118,9 +119,9 @@ body {
 
 .text-container {
     /* border: 10px solid black; */
-    width: 1500px;
+    width: 1550px;
     height: 2000px;
-    margin: 0.5%;
+    /* margin: 0.5%; */
     border: 2px solid rgb(41, 128, 179);
     /* border: 2px solid black; */
     display: flex;
@@ -192,8 +193,9 @@ body {
 }
 
 #goals {
-    height: 36%;
+    height: 35%;
     display: flex;
+
 
 }
 
@@ -248,7 +250,7 @@ body {
 
 .picture-scroll-container {
     /* width: 45%; */
-    width: 50%;
+    width: 47%;
     height: 400px;
     overflow: hidden;
     overflow-y: scroll;

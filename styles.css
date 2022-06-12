@@ -381,6 +381,7 @@ body {
 
 
 @media (max-width: 1900px) {
+    
     .about-one .description {
         overflow: hidden;
         overflow-y: scroll;
